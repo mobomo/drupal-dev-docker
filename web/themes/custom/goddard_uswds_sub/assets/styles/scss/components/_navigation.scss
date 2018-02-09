@@ -40,7 +40,7 @@
   }
 
   div[role=navigation] {
-    padding: 0 1.25rem;
+    padding: 0 26px;
     @include respond-to(large) {
       float: none;
     }
