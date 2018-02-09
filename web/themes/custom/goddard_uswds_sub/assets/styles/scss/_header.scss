@@ -19,10 +19,14 @@
   @include respond-to(large) {
     padding-top: 5px;
     padding-bottom: 0;
+    height: 80px;
   }
   img {
     float: left;
     max-height: 80px;
+    @include respond-to(medium) {
+      max-height: 70px;
+    }
   }
   .utility-menu {
     display: inline-flex;
