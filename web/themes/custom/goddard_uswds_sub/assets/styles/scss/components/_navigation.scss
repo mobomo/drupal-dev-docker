@@ -60,6 +60,7 @@
         @include respond-to(large) {
           background: inherit;
           color: #0071bc;
+          font-weight: 700;
         }
       }
 
@@ -125,6 +126,10 @@
   padding: 1.3rem 1.5rem;
   @include respond-to(medium-large) {
     text-align: center;
+  }
+
+  &:hover {
+    font-weight: 700;
   }
 }
 
