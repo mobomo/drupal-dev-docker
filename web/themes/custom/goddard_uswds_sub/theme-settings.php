@@ -1,5 +1,5 @@
 <?php
-  
+
 function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core\Form\FormStateInterface &$form_state, $form_id = NULL) {
   // Work-around for a core bug affecting admin themes. See issue #943212.
   if (isset($form_id)) {
@@ -9,7 +9,7 @@ function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core
   $form['theme_headings'] = array(
     '#type' => 'details',
     '#title' => t('Theme headings and titles'),
-    '#open' => FALSE,   
+    '#open' => FALSE,
   );
 
   $form['theme_headings']['center_name'] = array(
@@ -29,7 +29,7 @@ function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core
   $form['footer_text'] = array(
     '#type' => 'details',
     '#title' => t('Footer Text and Details'),
-    '#open' => FALSE,   
+    '#open' => FALSE,
   );
 
   $form['footer_text']['footer_info_line_one'] = array(
@@ -43,17 +43,24 @@ function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core
     '#title'         => t('Footer Info Line 2'),
     '#default_value' => theme_get_setting('footer_info_line_two'),
   );
-  
+
   $form['footer_text']['footer_info_line_three'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Footer Info Line 3'),
     '#default_value' => theme_get_setting('footer_info_line_three'),
     '#description'   => t("This text appears just below the NASA logo in the footer."),
-  );  
+  );
+
+  $form['footer_text']['footer_optional_block'] = array(
+    '#type'           => 'text_format',
+    '#title'          => t('Optional footer text center block'),
+    '#default_value'  => theme_get_setting('footer_text_optional_block'),
+    '#description'    => t('An optional area of markup to appear in the middle of the footer'),
+  );
 
   // Theme Settings style.
-  unset($form['theme_settings']); 
-  
+  unset($form['theme_settings']);
+
   // Header style.
   unset($form['header_style_fieldset']);
 
@@ -61,14 +68,14 @@ function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core
   unset($form['footer_style_fieldset']);
 
   // Menu Behavior style.
-  unset($form['menu_fieldset']); 
-  
+  unset($form['menu_fieldset']);
+
   // Edge to edge style.
-  unset($form['edge_to_edge_fieldset']);  
- 
+  unset($form['edge_to_edge_fieldset']);
+
   // Logo style.
-  unset($form['logo']);  
- 
+  unset($form['logo']);
+
   // Favicon style.
-  unset($form['favicon']);   
+  unset($form['favicon']);
 }
