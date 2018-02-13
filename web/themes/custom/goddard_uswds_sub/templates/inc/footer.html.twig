@@ -33,7 +33,7 @@
   {% endif %}
 
   <div class="nasa-agency-footer">
-    <div class="usa-grid-full nasa-agency-footer-container">
+    <div class="usa-grid-full nasa-agency-footer-container {{ footer_optional_block ? 'nasa-agency-footer-container--3-items' }}">
       <div class="footer-agency-id usa-width-one-third">
         <a href="https://www.nasa.gov">
           <img class="footer-logo" src="/themes/custom/goddard_uswds_sub/images/nasa-logo-sm.png" alt="Nasa logo" />
@@ -41,12 +41,16 @@
         <div class="footer-info">
           <div>{{ footer_info_line_one }}</div>
           <div>{{ footer_info_line_two }}</div>
-          <div>{{ footer_info_line_three }}</div>                    
+          <div>{{ footer_info_line_three }}</div>
         </div>
       </div>
 
-      <nav class="usa-footer-nav {{ footer_menu_width }}">
-         
+      <div class="footer__mid-block">
+        {{ footer_optional_block }}
+      </div>
+
+      <nav class="usa-footer-nav {{ footer_menu_width }} {{ footer_optional_block ? 'usa-footer-nav--no-auto-margin' }}">
+
           {{ page.footer_secondary }}
 
       </nav>

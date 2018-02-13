@@ -18,6 +18,15 @@
   }
 }
 
+.nasa-agency-footer-container--3-items {
+  @include respond-to(small) {
+    flex-direction: column;
+  }
+  @include respond-to(large) {
+    flex-direction: row;
+  }
+}
+
 .footer-agency-id {
   margin-right: 0;
   @include respond-to(small) {
@@ -45,6 +54,19 @@
     display: inline-block;
     vertical-align: middle;
   }
+
+  .nasa-agency-footer-container--3-items & {
+    @include respond-to(small) {
+      text-align: center;
+      display: block;
+    }
+    @include respond-to(medium) {
+      text-align: left;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+
 }
 
 .footer-info {
@@ -79,6 +101,12 @@ footer.usa-footer {
   nav {
     @include respond-to(large) {
       margin-left: auto;
+    }
+
+    &.usa-nav-footer--no-auto-margin {
+      @include respond-to(large) {
+        margin-left: initial;
+      }
     }
 
     .menu {
@@ -129,4 +157,8 @@ footer.usa-footer {
 
   }
 
+}
+
+.footer__mid-block {
+  margin: 20px auto;
 }
