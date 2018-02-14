@@ -54,8 +54,9 @@ function goddard_uswds_sub_form_system_theme_settings_alter(&$form, \Drupal\Core
   $form['footer_text']['footer_optional_block'] = array(
     '#type'           => 'text_format',
     '#title'          => t('Optional footer text center block'),
-    '#default_value'  => theme_get_setting('footer_text_optional_block'),
+    '#default_value'  => theme_get_setting('footer_optional_block')['value'],
     '#description'    => t('An optional area of markup to appear in the middle of the footer'),
+    '#format'         => 'full_html',
   );
 
   // Theme Settings style.
