@@ -163,6 +163,7 @@
     @include respond-to(medium) {
       width: 33.333333%;
     }
+
   }
 
   .month-view {
@@ -171,6 +172,28 @@
 
   .month-view tr {
     display: flex;
+
+    &:first-child {
+      padding-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-bottom: 10px;
+    }
+  }
+
+  .month-view thead tr:first-child {
+    padding-bottom: 0;
+  }
+
+  .month-view thead tr:last-child {
+    margin-bottom: 0;
+  }
+
+  // Hide the week links in the year calendar.
+  .days.week,
+  .mini.week {
+    display: none;
   }
 
 }
