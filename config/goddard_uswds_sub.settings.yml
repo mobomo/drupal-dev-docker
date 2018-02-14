@@ -38,3 +38,6 @@ footer_info: "National Aeronautics and Space Administration<br>\r\nPage Editor: 
 footer_info_line_one: 'National Aeronautics and Space Administration'
 footer_info_line_two: 'Page Editor: Lynn Jenner'
 footer_info_line_three: 'NASA Official: Brian Dunbar'
+footer_optional_block:
+  value: ''
+  format: full_html

@@ -7,9 +7,6 @@
     }
     .menu--utility-navigation {
       display: flex;
-      @include respond-to(medium-large) {
-        float: right;
-      }
       @include respond-to(large) {
         display: inline-flex;
         float: none;

@@ -16,7 +16,6 @@
 
   .office-name {
     padding-right: 0;
-    padding-left: 3rem;
     font-size: 3rem;
     line-height: 4.5rem;
     color: #FCEBA7;
@@ -24,11 +23,13 @@
     margin-top: 1em;
     @include respond-to(medium) {
       padding-right: 3rem;
-      padding-left: 3rem;
       margin-bottom: 1.5rem;
       margin-top: 1.5rem;
       font-size: 5rem;
       line-height: 5.5rem;
+    }
+    @include respond-to(large) {
+      padding-left: 3rem;
     }
 
   }

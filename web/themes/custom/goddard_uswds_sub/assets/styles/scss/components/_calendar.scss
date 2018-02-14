@@ -1,3 +1,9 @@
+// Entire Calendar
+.view-calendar {
+  @include respond-to(medium) {
+    margin-top: -57px;
+  }
+}
 // Calendar Menu / Filters
 .cal-menu {
   @include respond-to(medium) {
@@ -41,9 +47,14 @@
     }
 
   }
-  
+
   .cal-list {
-    text-align: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include respond-to(medium) {
+      text-align: right;
+    }
   }
 
 }
@@ -62,7 +73,6 @@
     }
     @include respond-to(medium) {
       width: 100%;
-      margin-top: 30px;
     }
   }
 
@@ -295,26 +305,26 @@
   .view-content {
     padding-top: 25px;
   }
-    
+
   .views-row {
     display: inline-block;
     padding-bottom: 25px;
     margin-bottom: 25px;
     width: 100%;
-        
+
     .views-field-title {
       margin: 0;
-      
+
       a {
         text-decoration: underline;
         color: inherit;
       }
-      
-    }
-    
-  } 
 
-}   
+    }
+
+  }
+
+}
 
 // General
 // ----------------------------------------------------------------------------

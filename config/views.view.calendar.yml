@@ -263,7 +263,7 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
-      title: ''
+      title: Calendar
     cache_metadata:
       max-age: -1
       contexts:
