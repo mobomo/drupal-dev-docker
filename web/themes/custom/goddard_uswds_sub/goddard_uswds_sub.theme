@@ -6,8 +6,8 @@ function goddard_uswds_sub_preprocess_page(&$variables) {
   $variables['footer_info_line_one'] = theme_get_setting('footer_info_line_one');
   $variables['footer_info_line_two'] = theme_get_setting('footer_info_line_two');
   $variables['footer_info_line_three'] = theme_get_setting('footer_info_line_three');
-  $variables['footer_optional_block'] = theme_get_setting('footer_optional_block');
-  $variables['footer_optional_block']['#markup'] = $variables['footer_optional_block']['value'];
+  $footer_optional_block = theme_get_setting('footer_optional_block');
+  $variables['footer_optional_block']['#markup'] = $footer_optional_block['value'];
 }
 
 function goddard_uswds_sub_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
@@ -20,8 +20,9 @@ function goddard_uswds_sub_preprocess_html(&$variables) {
   $variables['footer_info_line_one'] = theme_get_setting('footer_info_line_one');
   $variables['footer_info_line_two'] = theme_get_setting('footer_info_line_two');
   $variables['footer_info_line_three'] = theme_get_setting('footer_info_line_three');
-  $variables['footer_optional_block'] = theme_get_setting('footer_optional_block');
-  $variables['footer_optional_block']['#markup'] = $variables['footer_optional_block']['value'];
+  $footer_optional_block = theme_get_setting('footer_optional_block');
+  $variables['footer_optional_block']['#markup'] = $footer_optional_block['value'];
+
   $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
 
   $request = \Drupal::request();
