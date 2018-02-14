@@ -1,0 +1,31 @@
+uuid: 045126bf-e63c-40b2-ad82-eba54415227f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:user_list:78af62eb-7f19-4dcc-abf0-48d7a06f9111'
+  module:
+    - block_content
+    - system
+  theme:
+    - goddard_uswds_sub
+id: ourpeople
+theme: goddard_uswds_sub
+region: sub_area_left
+weight: 0
+provider: null
+plugin: 'block_content:78af62eb-7f19-4dcc-abf0-48d7a06f9111'
+settings:
+  id: 'block_content:78af62eb-7f19-4dcc-abf0-48d7a06f9111'
+  label: 'Our People'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

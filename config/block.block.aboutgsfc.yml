@@ -1,0 +1,31 @@
+uuid: f870a52e-d0e2-402e-b29e-0cb7bd0c9e6d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:44ee504b-d14c-4120-86f1-5ec8958a534e'
+  module:
+    - block_content
+    - system
+  theme:
+    - goddard_uswds_sub
+id: aboutgsfc
+theme: goddard_uswds_sub
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:44ee504b-d14c-4120-86f1-5ec8958a534e'
+settings:
+  id: 'block_content:44ee504b-d14c-4120-86f1-5ec8958a534e'
+  label: 'About GSFC'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

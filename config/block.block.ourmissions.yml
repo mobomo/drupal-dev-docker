@@ -1,0 +1,31 @@
+uuid: 8b5248ac-0c77-4563-a2c8-f2dbba4ad0ba
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_and_text_block:0c4c0f3b-48c8-4258-aaaa-7b509d6a0a6d'
+  module:
+    - block_content
+    - system
+  theme:
+    - goddard_uswds_sub
+id: ourmissions
+theme: goddard_uswds_sub
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:0c4c0f3b-48c8-4258-aaaa-7b509d6a0a6d'
+settings:
+  id: 'block_content:0c4c0f3b-48c8-4258-aaaa-7b509d6a0a6d'
+  label: 'Our Missions'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

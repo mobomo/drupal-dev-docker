@@ -1,0 +1,31 @@
+uuid: fb863fdc-1537-4d44-b055-93b7ccce02c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:carousel_block:eb302fb3-d676-499f-86a9-21706163bc9b'
+  module:
+    - block_content
+    - system
+  theme:
+    - goddard_uswds_sub
+id: featurednews
+theme: goddard_uswds_sub
+region: sub_area_right
+weight: 0
+provider: null
+plugin: 'block_content:eb302fb3-d676-499f-86a9-21706163bc9b'
+settings:
+  id: 'block_content:eb302fb3-d676-499f-86a9-21706163bc9b'
+  label: 'Featured News'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
