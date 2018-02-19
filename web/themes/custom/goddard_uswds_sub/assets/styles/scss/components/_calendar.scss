@@ -59,6 +59,16 @@
 
 }
 
+.cal-timezone {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  @include respond-to(medium) {
+    text-align: right;
+  }
+}
+
 // Calendar Pager
 .view-calendar .pager {
 
