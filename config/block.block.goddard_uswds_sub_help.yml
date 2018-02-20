@@ -11,7 +11,7 @@ _core:
 id: goddard_uswds_sub_help
 theme: goddard_uswds_sub
 region: content
-weight: -12
+weight: -11
 provider: null
 plugin: help_block
 settings:

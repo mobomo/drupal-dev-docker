@@ -1,0 +1,33 @@
+uuid: 67a8016b-4eaa-452a-90e5-9b8049f61cbc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:index_widget:3ffcc161-52e3-4fa0-a3df-2ccd71f46932'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - goddard_uswds_sub
+id: indexwidget
+theme: goddard_uswds_sub
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:3ffcc161-52e3-4fa0-a3df-2ccd71f46932'
+settings:
+  id: 'block_content:3ffcc161-52e3-4fa0-a3df-2ccd71f46932'
+  label: 'Index Widget'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      section_index: section_index
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

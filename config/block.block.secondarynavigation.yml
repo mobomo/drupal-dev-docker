@@ -12,7 +12,7 @@ dependencies:
 id: secondarynavigation
 theme: goddard_uswds_sub
 region: sidebar_first
-weight: -9
+weight: -11
 provider: null
 plugin: 'system_menu_block:secondary-navigation'
 settings:
@@ -27,7 +27,7 @@ visibility:
     id: node_type
     bundles:
       article: article
-      missions: missions
+      section_index: section_index
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

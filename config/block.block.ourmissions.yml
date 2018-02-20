@@ -12,7 +12,7 @@ dependencies:
 id: ourmissions
 theme: goddard_uswds_sub
 region: sidebar_second
-weight: 0
+weight: -12
 provider: null
 plugin: 'block_content:0c4c0f3b-48c8-4258-aaaa-7b509d6a0a6d'
 settings:
