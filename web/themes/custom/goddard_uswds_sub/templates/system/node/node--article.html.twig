@@ -1,0 +1,15 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h1{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h1>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes }}>
+    {{ content }}
+    <h6>last updated: {{ node.getChangedTime()|format_date('html_date') }}</h6>
+  </div>
+</article>
