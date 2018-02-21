@@ -1,3 +1,4 @@
+{% set attributes = attributes.addClass('section-index') %}
 <article{{ attributes }}>
 
   {{ title_prefix }}
@@ -9,8 +10,12 @@
   {{ title_suffix }}
 
   <div{{ content_attributes }}>
-    {{ node.body.summary }}
+    <div class="section-index__summary">
+      {{ node.body.summary }}
+    </div>
+    <div class="content-inset section-index__content-inset">
+      {{ content_inset }}
+    </div>
     {{ content }}
-    <h6>last updated: {{ node.getChangedTime()|format_date('html_date') }}</h6>
   </div>
 </article>

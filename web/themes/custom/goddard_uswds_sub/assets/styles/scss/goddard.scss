@@ -9,7 +9,7 @@
 @import "base";
 @import "fontawesome-all";
 
-// Site struction
+// Site structure
 @import "header";
 @import "footer";
 @import "menus";
@@ -24,6 +24,9 @@
 // Mobile fixes
 @import "mobile";
 
+// Layout
+@import "layout/section-index";
+
 
 // Components
 @import "components/icon-content-block";
@@ -35,3 +38,4 @@
 @import "components/search-results";
 @import "components/search-result";
 @import "components/teaser";
+@import "components/related-links";

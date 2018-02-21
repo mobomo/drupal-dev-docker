@@ -55,7 +55,14 @@ display:
           items_per_page: 0
           offset: 0
       style:
-        type: default
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: false
+          type: ul
+          wrapper_class: related-links__wrapper
+          class: related-links__list
       row:
         type: fields
         options:
@@ -122,7 +129,7 @@ display:
             target: '0'
           group_column: ''
           group_columns: {  }
-          group_rows: true
+          group_rows: false
           delta_limit: 0
           delta_offset: 0
           delta_reversed: false
@@ -243,7 +250,20 @@ display:
             label: ''
           granularity: second
       title: 'Related Links - Section Index'
-      header: {  }
+      header:
+        area_1:
+          id: area_1
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: false
+          tokenize: false
+          content:
+            value: '<h3>Related links</h3>'
+            format: basic_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -285,6 +305,7 @@ display:
           entity_field: nid
           plugin_id: node_nid
       display_extenders: {  }
+      css_class: related-links
     cache_metadata:
       max-age: -1
       contexts:
@@ -302,6 +323,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
+      block_description: 'Related Links'
     cache_metadata:
       max-age: -1
       contexts:

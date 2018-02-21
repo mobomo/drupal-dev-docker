@@ -11,8 +11,8 @@ dependencies:
     - goddard_uswds_sub
 id: indexwidget
 theme: goddard_uswds_sub
-region: content
-weight: -7
+region: content_inset
+weight: -11
 provider: null
 plugin: 'block_content:3ffcc161-52e3-4fa0-a3df-2ccd71f46932'
 settings:

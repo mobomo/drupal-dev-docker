@@ -1,0 +1,34 @@
+.related-links {
+  background: #F4F4F4;
+  padding: 1px 1.8rem 15px;
+  margin-bottom: 25px;
+}
+
+.related-links__list {
+  padding: 0;
+  margin: 0;
+
+  li {
+    list-style: none;
+
+    a {
+      font-family: Source Sans Pro,Helvetica,sans-serif;
+      font-size: 1.5rem;
+      padding: .55rem 1rem .55rem .5rem;
+      border: none;
+      color: #212121;
+      display: block;
+      text-decoration: none;
+    }
+
+    a:before {
+      content: "•";
+      font-size: 14px;
+      line-height: 19px;
+      margin-right: 5px;
+      vertical-align: top;
+    }
+
+  }
+
+}
