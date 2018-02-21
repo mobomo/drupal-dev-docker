@@ -1,0 +1,33 @@
+uuid: 81991503-f7bc-46eb-ae4d-8a8a1f29c8bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.related_links_section_index
+  module:
+    - ctools
+    - views
+  theme:
+    - goddard_uswds_sub
+id: views_block__related_links_section_index_block_1
+theme: goddard_uswds_sub
+region: sidebar_first
+weight: -10
+provider: null
+plugin: 'views_block:related_links_section_index-block_1'
+settings:
+  id: 'views_block:related_links_section_index-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      section_index: section_index
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

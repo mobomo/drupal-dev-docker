@@ -1,0 +1,21 @@
+{% set attributes = attributes.addClass('section-index') %}
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h1{{ title_attributes }}>
+      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+    </h1>
+  {% endif %}
+  {{ title_suffix }}
+
+  <div{{ content_attributes }}>
+    <div class="section-index__summary">
+      {{ node.body.summary }}
+    </div>
+    <div class="content-inset section-index__content-inset">
+      {{ content_inset }}
+    </div>
+    {{ content }}
+  </div>
+</article>

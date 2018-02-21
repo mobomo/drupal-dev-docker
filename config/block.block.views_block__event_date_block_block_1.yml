@@ -12,7 +12,7 @@ dependencies:
 id: views_block__event_date_block_block_1
 theme: goddard_uswds_sub
 region: sidebar_first
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:event_date_block-block_1'
 settings:

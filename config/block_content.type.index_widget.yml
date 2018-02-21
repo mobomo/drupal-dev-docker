@@ -1,0 +1,8 @@
+uuid: 0f2a34fb-bd80-4ed1-acae-d508da1aa39f
+langcode: en
+status: true
+dependencies: {  }
+id: index_widget
+label: 'Index Widget'
+revision: 0
+description: 'This block type is used specifically for Section Index content.'

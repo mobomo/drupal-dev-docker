@@ -13,6 +13,14 @@
     clear: both;
   }
 
+  .index-widget & {
+    margin-bottom: 30px;
+  }
+
+  .index-widget .field__item:last-child & {
+    margin-bottom: 0;
+  }
+
 }
 
 .icon-content-block__icon {
@@ -38,6 +46,13 @@
     }
   }
 
+  .index-widget & {
+    @include respond-to(medium) {
+      min-width: auto;
+      margin-right: 20px;
+    }
+  }
+
 }
 
 .icon-content-block__content {
@@ -49,6 +64,12 @@
   }
   @include respond-to(large) {
     width: 85%;
+  }
+
+  .index-widget & {
+    @include respond-to(medium) {
+      width: 60%;
+    }
   }
 }
 

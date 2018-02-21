@@ -1,0 +1,40 @@
+uuid: 4e22aa4b-be3a-4c14-86d0-7d677d91d00b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.index_widget
+    - field.storage.block_content.field_section_icon_and_text
+    - paragraphs.paragraphs_type.icon_and_text_block
+  module:
+    - entity_reference_revisions
+id: block_content.index_widget.field_section_icon_and_text
+field_name: field_section_icon_and_text
+entity_type: block_content
+bundle: index_widget
+label: 'Icon and Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_and_text_block: icon_and_text_block
+    target_bundles_drag_drop:
+      carousel:
+        weight: 5
+        enabled: false
+      icon_and_text_block:
+        enabled: true
+        weight: 6
+      text_block:
+        weight: 7
+        enabled: false
+      user_list:
+        weight: 8
+        enabled: false
+field_type: entity_reference_revisions
