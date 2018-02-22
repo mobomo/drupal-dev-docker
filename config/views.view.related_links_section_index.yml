@@ -324,6 +324,7 @@ display:
     display_options:
       display_extenders: {  }
       block_description: 'Related Links'
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

@@ -8,6 +8,7 @@ third_party_settings:
   menu_ui:
     available_menus:
       - main
+      - secondary-navigation
     parent: 'main:'
 name: 'Section Index'
 type: section_index

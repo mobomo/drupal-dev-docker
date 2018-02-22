@@ -26,7 +26,11 @@
     {#{% endif %}#}
     <ul class="usa-sidenav-list">
       {% if menu_level == 0 %}
-        <h3>{{ items|first.title }}</h3>
+        {% for item in items %}
+          {% if item.in_active_trail %}
+            <h3>{{ item.title }}</h3>
+          {% endif %}
+        {% endfor %}
       {% endif %}
 
       {% for item in items %}
