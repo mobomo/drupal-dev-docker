@@ -122,7 +122,7 @@ display:
           plugin_id: field
       filters: {  }
       sorts: {  }
-      title: 'Related Tags'
+      title: Tags
       header: {  }
       footer: {  }
       empty: {  }

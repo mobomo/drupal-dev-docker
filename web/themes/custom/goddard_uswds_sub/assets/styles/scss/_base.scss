@@ -32,6 +32,7 @@ button:focus, button:active {
   border-bottom: 1px solid #ddd;
   padding-bottom: 1.5rem;
   display: flex;
+  flex-direction: column;
   #block-goddard-uswds-sub-breadcrumbs {
     .usa-breadcrumbs li:not(:last-child):after {
       content: ' / ';
@@ -46,7 +47,7 @@ button:focus, button:active {
     }
   }
   #block-views-block-related-tags-block-1 {
-    margin-left: auto;
+    margin-top: 10px;
     display: inline-flex;
     font-weight: 200;
     font-size: 1.3rem;
