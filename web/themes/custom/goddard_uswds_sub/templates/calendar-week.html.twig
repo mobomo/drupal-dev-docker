@@ -84,7 +84,7 @@
     {% for time in items %}
     <tr class="not-all-day">
       <td class="calendar-agenda-hour">
-        <span class="calendar-hour">{{ time.hour|date("h:i") }}</span><span class="calendar-ampm">{{ time.ampm|date("a") }}</span>
+        <span class="calendar-hour">{{ time.time|date('h:i') }}</span><span class="calendar-ampm">{{ time.time|date("a") }}</span>
       </td>
       {% set current_position = 0 %}
       {% for column in columns %}
