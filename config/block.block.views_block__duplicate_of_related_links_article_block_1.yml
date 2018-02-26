@@ -1,0 +1,33 @@
+uuid: 510d3b81-fae6-4db6-9ce9-41174faf0d93
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.duplicate_of_related_links_article
+  module:
+    - ctools
+    - views
+  theme:
+    - goddard_uswds_sub
+id: views_block__duplicate_of_related_links_article_block_1
+theme: goddard_uswds_sub
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'views_block:duplicate_of_related_links_article-block_1'
+settings:
+  id: 'views_block:duplicate_of_related_links_article-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

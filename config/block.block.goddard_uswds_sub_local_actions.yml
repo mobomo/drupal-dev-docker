@@ -9,7 +9,7 @@ _core:
 id: goddard_uswds_sub_local_actions
 theme: goddard_uswds_sub
 region: content
-weight: -10
+weight: -8
 provider: null
 plugin: local_actions_block
 settings:
