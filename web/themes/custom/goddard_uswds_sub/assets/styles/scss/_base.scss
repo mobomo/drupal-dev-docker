@@ -136,3 +136,15 @@ button:focus, button:active {
 .page-node-type-article.user-logged-in .region-content .field--name-field-tags {
   margin-top: 0;
 }
+
+// Term Page
+.feed-icon {
+  display: inline-block;
+  background-image: url('/themes/custom/goddard_uswds_sub/images/rss.gif');
+  background-repeat: none;
+  background-position: -1px -1px;
+  width: 26px;
+  height: 26px;
+  text-indent: -100vw;
+  border-radius: 6px;
+}
