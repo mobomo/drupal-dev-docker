@@ -82,7 +82,7 @@
             {% endif %}
             <div class="{{ class }} calendar-agenda-hour">
               {% set this_hour = hour.hour~':00:00' %}
-              <span class="calendar-hour">{{ this_hour|date('h:i') }}</span><span class="calendar-ampm">{{ (hour.hour~':00')|date('a') }}</span>
+              <span class="calendar-hour">{{ this_hour|date('h:i') }}</span><span class="calendar-ampm">{{ this_hour|date('a') }}</span>
             </div>
           {% endfor %}
         </td>
