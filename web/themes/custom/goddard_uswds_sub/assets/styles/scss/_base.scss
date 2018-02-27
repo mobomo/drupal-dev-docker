@@ -148,3 +148,23 @@ button:focus, button:active {
   text-indent: -100vw;
   border-radius: 6px;
 }
+
+
+// Images and stuff
+
+.align-left {
+  margin: 1em 40px 1em 0;
+}
+
+.align-right {
+  margin: 1em 0 1em 40px;
+}
+
+figure {
+  &.align-left {
+    margin-left: 0;
+  }
+  &.align-right {
+    margin-right: 0;
+  }
+}
