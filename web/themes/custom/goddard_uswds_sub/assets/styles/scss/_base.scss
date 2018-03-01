@@ -147,6 +147,17 @@ button:focus, button:active {
   height: 26px;
   text-indent: -100vw;
   border-radius: 6px;
+  @include respond-to(large) {
+    float: right;
+    margin-top: -56px;
+  }
+
+  .user-logged-in & {
+    @include respond-to(large) {
+      margin-top: -110px;
+    }
+  }
+
 }
 
 
