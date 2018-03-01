@@ -145,8 +145,10 @@ button:focus, button:active {
   background-position: -1px -1px;
   width: 26px;
   height: 26px;
-  text-indent: -100vw;
+  text-indent: -999vw;
   border-radius: 6px;
+  color: transparent;
+  clear: both;
   @include respond-to(large) {
     float: right;
     margin-top: -56px;
