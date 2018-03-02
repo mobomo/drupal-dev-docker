@@ -310,6 +310,15 @@
     padding-right: 10px;
   }
 
+  // Hide multi-day tds when there's no content.
+  .multi-day.no-entry {
+    display: none;
+  }
+
+  .not-all-day:last-child .calendar-agenda-items.single-day {
+    border-bottom: 0;
+  }
+
 }
 
 .calendar-calendar .week-view .single-day-footer {
