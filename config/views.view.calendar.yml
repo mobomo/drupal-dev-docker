@@ -672,19 +672,6 @@ display:
             replacement_format: 'Y'
           plugin_id: datetime_year
       header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: false
-          tokenize: false
-          content:
-            value: "<div class=\"cal-menu\">\n<ul>\n<li class=\"cal-month\"><a href=\"/calendar\">Month</a></li>\n<li class=\"cal-week\"><a href=\"/calendar/week\">Week</a></li>\n<li class=\"cal-day\"><a href=\"/calendar/day\">Day</a></li>\n<li class=\"cal-year\"><a href=\"/calendar/year\">Year</a></li>\n</ul>\n<div class=\"cal-list\"><a href=\"/calendar/list\">View Upcoming Events</a></div>\n<small class=\"cal-timezone\">All events in Eastern Time</small>\n</div>"
-            format: full_html
-          plugin_id: text
         calendar_header:
           id: calendar_header
           table: views
