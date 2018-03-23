@@ -22,13 +22,12 @@
  * @ingroup themeable
  */
 #}
+{#{{ date().getTimestamp|format_date('long')  }}#}
 <div class="calendar-calendar"><div class="week-view">
 <table class="full">
   <thead>
     <tr>
-      {% if by_hour_content > 0 or start_times is not empty %}
       <th class="calendar-agenda-hour">{% trans %}Time{% endtrans %}</th>
-      {% endif %}
       {% for cell in day_names %}
         <th class="{{ cell.class }}" id="{{ cell.header_id }}">
           {{ cell.data }}
@@ -72,14 +71,625 @@
     {% endfor %}
     {% if items is empty %}
       <tr class="not-all-day">
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-        <td class="calendar-agenda-hour--blank"></td>
-      </tr>
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">08:00</span><span class="calendar-ampm">am</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">09:00</span><span class="calendar-ampm">am</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">10:00</span><span class="calendar-ampm">am</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">11:00</span><span class="calendar-ampm">am</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">12:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">01:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">02:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">03:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">04:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">05:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">06:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                               <td class="calendar-agenda-hour">
+                               <span class="calendar-hour">07:00</span><span class="calendar-ampm">pm</span>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Sunday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Monday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Tuesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Wednesday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Thursday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Friday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               <td class="calendar-agenda-items single-day" headers="Saturday">
+                               <div class="calendar">
+                               <div class="inner">
+                               </div>
+                               </div>
+                               </td>
+                               </tr>
+      <tr class="not-all-day">
+                             <td class="calendar-agenda-hour">
+                             <span class="calendar-hour">08:00</span><span class="calendar-ampm">pm</span>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Sunday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Monday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Tuesday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Wednesday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Thursday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Friday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             <td class="calendar-agenda-items single-day" headers="Saturday">
+                             <div class="calendar">
+                             <div class="inner">
+                             </div>
+                             </div>
+                             </td>
+                             </tr>
+        {#<tr class="not-all-day">#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+        {#<td class="calendar-agenda-hour--blank"></td>#}
+      {#</tr>#}
     {% endif %}
     {% for time in items %}
     <tr class="not-all-day">
