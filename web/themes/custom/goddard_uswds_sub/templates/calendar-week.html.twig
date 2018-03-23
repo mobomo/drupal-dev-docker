@@ -23,6 +23,11 @@
  */
 #}
 {#{{ date().getTimestamp|format_date('long')  }}#}
+<div class="calendar__no-events-message">
+  {% if items is empty %}
+    There are no events this week
+  {% endif %}
+</div>
 <div class="calendar-calendar"><div class="week-view">
 <table class="full">
   <thead>
